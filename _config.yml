@@ -1,25 +1,23 @@
 #-------------------------------
 # General Site Settings
-title: Pawel Kaplanski
+title: Pawel Kaplanski, PhD
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Ideas.
+description: Ciphers and Synapses.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kaplanski.ai" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # Author Settings
 author:
-  name: Pawel Kaplanski
-  bio: I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems.
-  avatar: '/images/01.jpg'
+  name: Pawel Kaplanski, PhD
+  bio: Dr. Pawel Kaplanski, a distinguished leader in AI and software engineering, directs a team of elite AI practitioners, professors, and developers, selected through a stringent process. With a PhD from Gdansk University and a former Assistant Professorship at Sydney University, he has extensively contributed to AI through 45 papers and 2 patents in operations research, focusing on supply chain optimization. His work has led to the development and scaling of three startups in logistics and payment systems, alongside two AI ventures in cybersecurity and computer vision, demonstrating profound expertise in deploying machine learning models.
+  avatar: '/images/pawel.jpeg'
 
 social:
-- {icon: "ion-logo-twitter", label: Twitter, link: "https://twitter.com"}
-- {icon: "ion-logo-facebook", label: Facebook, link: "https://facebook.com"}
-- {icon: "ion-logo-pinterest", label: Pinterest, link: "https://pinterest.com"}
-- {icon: "ion-logo-dribbble", label: Dribbble, link: "https://dribbble.com"}
-- {icon: "ion-logo-instagram", label: Instagram, link: "https://instagram.com"}
-- {icon: "ion ion-logo-vimeo", label: Vimeo, link: "https://vimeo.com"}
+- {icon: "ion-logo-linkedin", label: Linkedin, link: "https://www.linkedin.com/in/kaplanski/"}
+- {icon: "ion-logo-twitter", label: Twitter, link: "https://twitter.com/Pawel_Kaplanski"}
+- {icon: "ion-logo-google", label: Scholar, link: "https://scholar.google.com.ec/citations?user=Hu5Wzb0AAAAJ&hl=fil"}
+- {icon: "ion-logo-github", label: Github, link: "https://github.com/sonofsatoshi"}
 
 # Example of adding a new link to the author section and footer - {icon: "ion-logo-github", label: Github, link: "https://github.com"}
 # Other icons can be found at https://ionicons.com/v4/
@@ -27,16 +25,16 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hey, I’m Joseph! Designer & Developer.
-  hero__description: I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems.
-  hero__image: '/images/01.jpg'
+  hero__title: "Ciphers and Synapses"
+  hero__description: The dialogue between the decentralizing force of Bitcoin, promising a future of sovereign, hard money, and the centralizing tendencies of AI, offering keys to vast human knowledge.
+  hero__image: '/images/pawel.jpeg'
 
 
 #-------------------------------
 # Newsletter (_includes/footer-widgets/widget-subscribe.html)
-mailchimp: true # To enable the mailchimp form, use the value 'true'. To disable the form, use the value 'false' or leave the field blank.
+mailchimp: false # To enable the mailchimp form, use the value 'true'. To disable the form, use the value 'false' or leave the field blank.
 mailchimp__title: Get interesting news # Add your Title
-mailchimp__text: Subscribe to our newsletter and we’ll send you the emails of latest posts. # Add your description.
+mailchimp__text: Subscribe to my newsletter. # Add your description.
 mailchimp__identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 mailchimp__button__text: Join # Add your button text
 
@@ -44,8 +42,8 @@ mailchimp__button__text: Join # Add your button text
 #-------------------------------
 # Contact Settings
 contact:
-  email: your@email.com # Add your email for contact form
-  description: Joseph comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
+  email: pawel@kaplanski.ai # Add your email for contact form
+  description: You can contact me through this form. I'm looking forward to hearing from you and exploring potential opportunities for collaboration or discussion. Whether it's ideas, projects, or just a chat about the latest in AI and Bitcoin, I'm here. # Add a description of your form
 
 # NOTE
 # Joseph comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
