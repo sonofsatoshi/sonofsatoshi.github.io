@@ -33,10 +33,36 @@
     }
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+
   <style>
   {% capture include_to_scssify %}
     {% include main.scss %}
   {% endcapture %}
   {{ include_to_scssify | scssify }}
   </style>
+
+<script>
+  var config = {
+      startOnLoad:true,
+      theme: 'base',
+      themeVariables: {
+        activationBorderColor:'#000',
+        activationBkgColor:'#F00',
+        primaryColor: '#FFFFFF',
+        primaryTextColor: '#000',
+        primaryBorderColor: '#000',
+        lineColor: '#000',
+        secondaryColor: '#FFF',
+        tertiaryColor: '#000',
+        labelBoxBorderColor:'#F00',
+      },
+      flowchart:{
+              useMaxWidth:false,
+              htmlLabels:true
+          }
+  };
+  mermaid.initialize(config);
+  window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  </script>
 </head>
