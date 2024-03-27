@@ -36,8 +36,6 @@ With a PhD in AI from Gdansk University, his academic and professional journey e
 
 6. Kaplanski, P., Orłowski, C., Bach-Dąbrowska, I., & Wysocki, W. (2016). Hybrid Fuzzy-Ontological Project Framework of a Team Work Simulation System. *International Journal of Knowledge and Systems Science (IJKSS)*, (7). [Online]. Available: [http://www.igi-global.com/article/hybrid-fuzzy-ontological-project-framework-of-a-team-work-simulation-system/142837](http://www.igi-global.com/article/hybrid-fuzzy-ontological-project-framework-of-a-team-work-simulation-system/142837)
 
-Here is the list in Markdown format:
-
 ## Patents
 
 1. **Atomically processing obligation payments for transactions in real time**
