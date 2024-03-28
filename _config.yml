@@ -18,7 +18,7 @@ social:
 - {icon: "ion-logo-twitter", label: Twitter, link: "https://twitter.com/Pawel_Kaplanski"}
 - {icon: "ion-logo-github", label: Github, link: "https://github.com/sonofsatoshi"}
 - {icon: "ion-ios-bulb", label: Patents, link: "https://patents.google.com/?q=(kaplanski+pawel)&oq=kaplanski+pawel"}
-- {icon: "ion-ios-school", label: Scholar, link: "https://scholar.google.com.ec/citations?user=Hu5Wzb0AAAAJ&hl=fil"}
+- {icon: "ion-ios-school", label: Scholar, link: "https://scholar.google.com/citations?user=Hu5Wzb0AAAAJ&hl=fil"}
 
 # Example of adding a new link to the author section and footer - {icon: "ion-logo-github", label: Github, link: "https://github.com"}
 # Other icons can be found at https://ionicons.com/v4/
