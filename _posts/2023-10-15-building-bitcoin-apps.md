@@ -37,16 +37,85 @@ Bitcoin seems to be mundane. There is no fun there. Even BRC20 - a quite surpris
 
 The essence of the crypto space can be understood as decentralization. Maintaining a blockchain makes sense only if the goal is to eliminate reliance on trusted, centralized organizations, enabling a system where participants can objectively verify the state of the system without needing to trust anyone. Here, we will discuss decentralized apps (dApps). Centralized apps have been extensively covered elsewhere, focusing on how to build scalable, centralized architectures, such as those in cloud computing.
 
-Web 3.0 is synonymous with decentralization. However, due to its inherent limitations, Bitcoin introduces unique challenges to decentralized app architecture by enforcing a specific separation of responsibilities. Bitcoin secures the monetary aspect of the system, requiring all other functionalities to be handled off-chain. Off-chain computing interacts with the Bitcoin network only in the context of securing Bitcoin assets. A primary interaction point involves Bitcoin transactions, which, in their complex form as Hash Time-Locked Contracts (HTLCs), serve as the enabling technology for the Lightning Network. The Lightning Network facilitates the creation of invoices and payments in an onion-routed manner, significantly enhancing Bitcoin's scalability and utility for microtransactions. However, there are a few missing components necessary for comprehensive app development: 
 
-1. Communication infrastructure, 
-2. Database, and 
-3. Oracles.
+Web 3.0 is synonymous with decentralization. However, due to its inherent limitations, Bitcoin introduces unique challenges to decentralized app architecture by enforcing a specific separation of responsibilities. Bitcoin secures the monetary aspect of the system, requiring all other functionalities to be handled off-chain. Off-chain computing interacts with the Bitcoin network only in the context of securing Bitcoin assets. A primary interaction point involves Bitcoin transactions, which, in their complex form as Hash Time-Locked Contracts (HTLCs), serve as the enabling technology for the Lightning Network. The Lightning Network facilitates the creation of invoices and payments in an onion-routed manner, significantly enhancing Bitcoin's scalability and utility for microtransactions. However, there are a few missing components necessary for comprehensive app development: Communication infrastructure, Database, and 
+Oracles.
+
+<div class="gallery-box">
+    <div class="mermaid col-12">
+flowchart TB
+    MA((Mobile App)) --> PS(Payment System)
+    MA --> CI(Communication)
+    MA --> DB[(Database)]
+    MA --> OR(Oracles)
+    </div>
+</div>
 
 
-## Communication Infrastructure in Mobile Apps
+## Communication Infrastructure in Mobile Applications
 
-Mobile applications today are designed with diverse communication infrastructures to cater to various user needs, ranging from personal and professional interactions to transactions and community engagement. Here are key examples:
+Mobile applications today are crafted with a variety of communication infrastructures to meet diverse user needs. These range from facilitating personal and professional interactions to enabling transactions and fostering community engagement. In the context of Bitcoin Apps and similar decentralized applications, there's a distinct absence of a central communication platform, prompting a reliance on Peer-to-Peer (P2P) communication methods. This scenario unfolds in two primary ways: through mobile mesh networks and using a relay map.
+
+### Mobile Mesh Networks
+
+A mobile mesh network leverages a network of mobile devices interconnected through wireless communication technologies like Wi-Fi, Bluetooth, or cellular data. Each device within this network acts as a node, relaying data to and from other nodes. This structure creates a decentralized and self-organizing network, where data can traverse across various devices to reach its destination. Technologies such as WebRTC or Peer from Holepunch.io exemplify the application of mobile mesh networks in enabling direct, device-to-device communication without the need for a centralized server.
+
+**Example of a Mobile Mesh Network:**
+
+
+<div class="gallery-box">
+    <div class="mermaid col-12">
+graph LR
+    U1(User1) --- U2(User2)
+    U2 --- U3(User3)
+    U3 --- U4(User4)
+    U4 --- U5(User5)
+    U5 --- U6(User6)
+    U6 --- U7(User7)
+    U7 --- U1(User1)
+    U2 --- U4
+    U4 --- U6
+    U7 --- U3
+    U5 --- U1
+    </div>
+</div>
+
+- User1 connects directly to User2, User3 to User4, and so on, forming a mesh where each user can directly or indirectly communicate with any other user in the network.
+- Data can route through multiple devices, enabling communication even in challenging environments where direct connections might not be possible.
+
+### Relay Map
+
+The concept of a relay map introduces an implicit network built atop redundant connections between users and multiple relays. In this model, relays function as nodes that users connect to but are not directly interconnected with each other. Users can publish events to or subscribe to events from one or more relays. When an event is published to a specific relay, it gets distributed to all other users connected to that relay, facilitating a distributed network topology as more users and relays join the network. The Nostr protocol is a prime example of implementing P2P communication through encrypted messages using a relay map approach.
+
+Moreover, relays play a critical role beyond just data transmission; they act as micro-servers, enabling the implementation of essential features such as push notifications. Push notifications are a pivotal component in the realm of mobile app communication, especially considering that mobile apps can frequently operate in a background mode. This mode significantly restricts many of the app's advanced functionalities, including its ability to maintain internet connectivity. By leveraging push notifications, developers can implement a wake-up mechanism that activates the app from its background state to the foreground, ensuring that users remain informed and engaged with timely and relevant updates. This functionality is vital for maintaining user interaction and ensuring that the app remains responsive to real-time events, even when it is not actively in use.
+
+**Example of a Relay Map:**
+<div class="gallery-box">
+    <div class="mermaid col-12">
+graph BT
+    NSTR1(Relay1) --- U1(User1)
+    NSTR1(Relay1) --- U2(User2)
+    NSTR1(Relay1) --- U3(User3)
+    NSTR1(Relay1) --- U4(User4)
+    NSTR1(Relay1) --- U5(User5)
+    NSTR2(Relay2) --- U3(User3)
+    NSTR2(Relay2) --- U4(User4)
+    NSTR2(Relay2) --- U5(User5)
+    NSTR3(Relay3) --- U4(User4)
+    NSTR3(Relay3) --- U5(User5)
+    NSTR3(Relay3) --- U6(User6)
+    NSTR3(Relay3) --- U7(User7)
+    </div>
+</div>
+
+- Users connect to one or more relays (e.g., User3 is connected to Relay1 and Relay2).
+- Events published by a user to their connected relay(s) are distributed to all other users connected to those same relays.
+- This creates a scalable and flexible network topology, enabling efficient distribution of information without requiring direct user-to-user connections.
+
+Both mobile mesh networks and relay maps are pivotal in the development of decentralized communication protocols, offering robust and resilient alternatives to traditional, centralized communication infrastructures. These technologies not only enhance privacy and security but also ensure that communication remains uninterrupted even in the absence of central servers, making them ideal for applications that prioritize decentralization and user autonomy.
+
+
+## Appendix 1. Communication Infrastructure in Mobile Apps
 
 | **Category**                      | **Description**                                                                                                                                                                                                 | **Actors**                          | **Way of Communication**                                                                                                                                 | **Examples**                          |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
