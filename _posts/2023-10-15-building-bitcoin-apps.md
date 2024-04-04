@@ -6,27 +6,6 @@ date:   2023-10-15 11:02:01 +11:00
 tags:   [bitcoin,lightning network,nostr,apps]
 ---
 
-For more details  (https://kaplanski.ai/building-bitcoin-apps)
-
-At TheHyperlabs we are building Mobile Apps that exceed the financial aspects of Bitcoin and are useful in everyday life. One example is a Fairide (an uber killer) based on our Open Source Protocol called gig gossip.
-
-Abstract of the talk:
-
-Bitcoin, the pioneer of cryptocurrency, has set the foundation for the myriad of digital currencies and blockchain technologies that exist today. However, developers venturing into Bitcoin app development encounter a unique set of challenges, primarily due to Bitcoin's original design, which did not prioritize programmability and lacks the smart contract capabilities seen in platforms like Ethereum. This talk aims to demystify the process of developing applications on Bitcoin's network, emphasizing the creative solutions developers can employ within its limitations.
-
-Bitcoin's architecture, with its simplified set of computing capabilities courtesy of Bitcoin Script, presents a landscape where simplicity reigns and limitations abound. Yet, it is within these constraints that creativity and ingenuity find their true test. This session will explore how supporting technologies like the Lightning Network and NOSTR protocol enhance Bitcoin's utility, enabling a broader range of applications beyond simple transactions. We will delve into the significance of the Lightning Network in overcoming Bitcoin's throughput limitations, making micropayments viable, and how NOSTR extends Bitcoin's capabilities to decentralized social interactions.
-
-Through this talk, attendees will gain insights into the challenges and opportunities in Bitcoin app development, understanding how to leverage existing technologies to build innovative and user-empowering applications within the Bitcoin ecosystem.
-
-I believe this topic will resonate well with the Bitcoin 2024 audience, offering valuable perspectives on developing within the Bitcoin framework and fostering a deeper appreciation for its potential. I look forward to the opportunity to share these insights at your esteemed event.
-
-
-
-
-Best regards,
-Pawel Kaplanski
-
-
 ### Introduction
 
 In the ever-evolving landscape of cryptocurrency, Bitcoin stands as the pioneering digital currency. Its breakthrough has spawned a myriad of cryptocurrencies and smart contract/blockchain platforms. Yet, developers venturing into the realm of Bitcoin apps face distinct challenges.
