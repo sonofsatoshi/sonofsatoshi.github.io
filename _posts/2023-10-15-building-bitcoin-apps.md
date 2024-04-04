@@ -5,6 +5,28 @@ description: Unlike younger counterparts like Ethereum, Bitcoin wasn't designed 
 date:   2023-10-15 11:02:01 +11:00
 tags:   [bitcoin,lightning network,nostr,apps]
 ---
+
+For more details  (https://kaplanski.ai/building-bitcoin-apps)
+
+At TheHyperlabs we are building Mobile Apps that exceed the financial aspects of Bitcoin and are useful in everyday life. One example is a Fairide (an uber killer) based on our Open Source Protocol called gig gossip.
+
+Abstract of the talk:
+
+Bitcoin, the pioneer of cryptocurrency, has set the foundation for the myriad of digital currencies and blockchain technologies that exist today. However, developers venturing into Bitcoin app development encounter a unique set of challenges, primarily due to Bitcoin's original design, which did not prioritize programmability and lacks the smart contract capabilities seen in platforms like Ethereum. This talk aims to demystify the process of developing applications on Bitcoin's network, emphasizing the creative solutions developers can employ within its limitations.
+
+Bitcoin's architecture, with its simplified set of computing capabilities courtesy of Bitcoin Script, presents a landscape where simplicity reigns and limitations abound. Yet, it is within these constraints that creativity and ingenuity find their true test. This session will explore how supporting technologies like the Lightning Network and NOSTR protocol enhance Bitcoin's utility, enabling a broader range of applications beyond simple transactions. We will delve into the significance of the Lightning Network in overcoming Bitcoin's throughput limitations, making micropayments viable, and how NOSTR extends Bitcoin's capabilities to decentralized social interactions.
+
+Through this talk, attendees will gain insights into the challenges and opportunities in Bitcoin app development, understanding how to leverage existing technologies to build innovative and user-empowering applications within the Bitcoin ecosystem.
+
+I believe this topic will resonate well with the Bitcoin 2024 audience, offering valuable perspectives on developing within the Bitcoin framework and fostering a deeper appreciation for its potential. I look forward to the opportunity to share these insights at your esteemed event.
+
+
+
+
+Best regards,
+Pawel Kaplanski
+
+
 ### Introduction
 
 In the ever-evolving landscape of cryptocurrency, Bitcoin stands as the pioneering digital currency. Its breakthrough has spawned a myriad of cryptocurrencies and smart contract/blockchain platforms. Yet, developers venturing into the realm of Bitcoin apps face distinct challenges.
@@ -22,6 +44,13 @@ Another Bitcoin-centric technology that makes a significant difference is the Li
 If you are a crypto developer from Solana or Ethereum used to working with Solidity, etc., it might seem strange to write about programming apps on Bitcoin. Bitcoin is perceived as old-fashioned, lacking in novelty. It lacks smart contracts and does not allow for zk-rollups, therefore seeming not to scale with demand. Moreover, Bitcoin maximalists seem like a church with an anonymous mystical Messiah (Satoshi), a Bible (The Bitcoin Standard), and a school of thought (Austrian Economics). The crypto space around Ethereum or Solana appears to be a vibrant space where any new idea is welcomed, and projects are colorful, looking like an El Dorado. The crypto space created the web3 movement, aiming to surpass web2 with decentralization, advocating for distributed organizations (DAOs) managed by anonymous stakeholders, etc., with its techonomy.
 
 Bitcoin seems to be mundane. There is no fun there. Even BRC20 - a quite surprising side effect of the Taproot soft fork, which allowed for Bitcoin Ordinals and Inscriptions - is seen by the Bitcoin community as a bug that should be fixed. The Bitcoin network has a single purpose: to move Bitcoins. Movement of bitcoins is limited to a 1MB/10m transfer rate (approx 1.7 kB/s). An average of 4000 transactions per block gives us 6.7 transactions per second (2-3 before SegWit, 7-10 with SegWit) - which is very slow, designed from the beginning, and it does not seem like it is possible to change, as the so-called block-size wars have already proven. Slow, mundane network that is almost impossible to innovate - but on the other side - a solid rock foundation of having only 21 million Bitcoins as a limit of a geometric series reducing Bitcoin inflation every time new 210k blocks are mined.
+
+**I am sure this is the kind of foundation you, as a Solidity/Solana developer, might be missing, and it's something you can only find with Bitcoin:**
+1. 21 million.
+2. It was used as monopoly money for so long that it became fully distributed and not only decentralized.
+3. Purely game-theoretic from the economic point of view.
+
+Moreover;
 
 |System | transactions per second| number of nodes (2023)|architecturee| cost of single node (USD)|
 |---|---|---|---|---|
