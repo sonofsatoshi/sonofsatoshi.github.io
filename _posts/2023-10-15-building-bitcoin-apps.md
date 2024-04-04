@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Building Bitcoin Mobile Apps
-description: Unlike younger counterparts like Ethereum, Bitcoin wasn't designed with programmability in mind. The absence of smart contracts in Bitcoin's architecture fundamentally alters the approach to app development. In this landscape, simplicity is king, and limitations are plentiful. However, it's within these constraints that creativity and ingenuity are truly tested...
+description: Unlike younger counterparts like Ethereum, Bitcoin wasn't designed with programmability in mind. The absence of smart contracts in Bitcoin's architecture fundamentally alters the approach to app development. In this landscape, simplicity reigns supreme, and limitations abound. Yet, it is within these constraints that creativity and ingenuity are truly tested, and mobile apps find their place...
 date:   2023-10-15 11:02:01 +11:00
 tags:   [bitcoin,lightning network,nostr,apps]
 ---
