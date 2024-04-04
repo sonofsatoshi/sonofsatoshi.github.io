@@ -31,7 +31,7 @@ Bitcoin seems to be mundane. There is no fun there. Even BRC20 - a quite surpris
 
 Moreover;
 
-|System | transactions per second| number of nodes (2023)|architecturee| cost of single node (USD)|
+|System | transactions per second| number of (named) nodes (2023)|architecture| cost of single node (USD)|
 |---|---|---|---|---|
 |Bitcoin Segwit| 7 |17300| P2P POW| $250 |
 |Bitcoion on Lightning Network| >1000000 (theoretical)| 16500|P2P| $250|
