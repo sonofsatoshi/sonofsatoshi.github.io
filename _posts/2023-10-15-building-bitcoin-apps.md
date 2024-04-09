@@ -39,9 +39,9 @@ Moreover;
 |Bitcoion on Lightning Network| >1000000 (theoretical)| 16500|P2P| $250|
 |Ethereum| 20 | 7460 | P2P POS| $4000 (x4 for archive)|
 |Solana| 2500 | 2040 | Hybrid P2P + Cloud|$18738|
-|Pay pal|193| - | Centralized|-
-|Visa|24000| - |Centralized|-
-|Mastercard|5000| - | Centralized|-
+|Pay pal|193| - | Centralized|-|
+|Visa|24000| - |Centralized|-|
+|Mastercard|5000| - | Centralized|-|
 
 ## Bitcoin and Decentralized Apps Development
 
@@ -62,6 +62,20 @@ flowchart TB
     MA --> AU(Authentication \n & Authorisation)
     </div>
 </div>
+
+Moreover; certain design principles come into play:
+
+1. **Symmetry**: Each app instance operates the same way as the others, which mirrors the peer-to-peer principle of Bitcoin.
+
+2. **Permissionlessness**: Anyone with an internet connection can join in. No one is gatekept, reflecting the permisionless nature of Bitcoin.
+
+3. **Privacy**:  Communication among nodes or clients is encrypted, enhancing user trust by protecting sensitive transactional data.
+
+4. **Anonymity**: The identity of people behind transactions is secret.
+
+5. **Sustainability**: The application's features should promote honest participation, with built-in mechanisms that inherently disadvantage dishonest actors. This "implicit punishment principle", taken from Bitcoin, ensures the long-term health of the app ecosystem.
+
+6. **Compliance Consistency**: Staying within legal boundaries is critical, even in decentralized spaces. The app should be developed to comply with laws and regulations over time.
 
 
 ## Communication Infrastructure in Mobile Applications
@@ -146,9 +160,10 @@ Mobile applications often depend on external services to furnish real-time, reli
 | **Environmental Data**          | Information related to air quality, pollution levels, and the UV index.                                                                                                                                                                  | Health and fitness apps                             |
 | **Currency Exchange Rates**     | Up-to-date exchange rates for converting prices and transactions between different currencies.                                                                                                                                           | Travel apps, E-commerce apps, Finance apps          |
 
+
 ## Regulatory Compliance
 
-Even when developing applications that offer users sovereignty, privacy, and anonymous features, it's crucial to recognize that these applications still operate within a specific legislative framework. This framework is governed by regulatory bodies at both local government and state levels. To ensure safety and legality for both your platform and its users, compliance with these regulations is essential. An illustrative example can be seen in the context of Bitcoin transactions. In many jurisdictions, if Bitcoin is permitted as a form of payment, it often comes with stringent requirements for Know Your Customer (KYC) protocols and the tracing of transactions for purposes such as taxation. Generally, there are at least two critical regulatory requirements that your applications might need to address: KYC and ODR.
+Even when developing applications that offer users sovereignty, privacy, and anonymous features, it's crucial to recognize that these applications still operate within a specific legislative framework. This framework is governed by regulatory bodies at both local government and state levels. To ensure safety and legality for both your platform and its users, compliance with these regulations is essential. An illustrative example can be seen in the context of Bitcoin transactions. In many jurisdictions, if Bitcoin is permitted as a form of payment, it often comes with stringent requirements for Know Your Customer (KYC) protocols and the tracing of transactions for purposes such as taxation. Generally, there are at least two critical regulatory requirements that your applications might need to address: KYC and ODR [Wikipedia - Legality of Bitcoin by country or territory] (https://en.wikipedia.org/wiki/Legality_of_cryptocurrency_by_country_or_territory)
 
 ### KYC (Know Your Customer)
 
