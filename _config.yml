@@ -67,6 +67,7 @@ permalink: /:title
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jektex
 
 paginate: 5
 paginate_path: "/page/:num"
@@ -89,3 +90,11 @@ tag_permalink_style:  /:title
 sass:
   sass_dir: _sass
   style: compressed
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: true
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
